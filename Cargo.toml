@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "ode-designer",
+    "odeir",
+    "imgui",
+    "implot",
+    "imnodes"
+]
