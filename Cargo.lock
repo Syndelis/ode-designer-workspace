@@ -1474,6 +1474,7 @@ dependencies = [
  "imgui-glium-renderer",
  "imgui-winit-support",
  "imnodes",
+ "implot",
  "log",
  "odeir",
  "paste",

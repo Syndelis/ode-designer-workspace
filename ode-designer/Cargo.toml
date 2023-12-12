@@ -12,6 +12,7 @@ imgui-glium-renderer = { workspace = true }
 imgui-winit-support = { workspace = true }
 imnodes = { workspace = true }
 odeir = { workspace = true }
+implot = { workspace = true }
 
 color-eyre = "0.6.2"
 derive_more = "0.99.17"
