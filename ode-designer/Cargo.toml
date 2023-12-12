@@ -7,25 +7,21 @@ edition = "2021"
 imgui = ["dep:imgui-glium-renderer", "dep:imgui-winit-support", "dep:winit", "dep:glium", "dep:imgui"]
 
 [dependencies]
+imgui = { workspace = true, features = ["docking"] } 
+imgui-glium-renderer = { workspace = true }
+imgui-winit-support = { workspace = true }
+imnodes = { workspace = true }
+odeir = { workspace = true }
+
 color-eyre = "0.6.2"
 derive_more = "0.99.17"
 log = "0.4.17"
 strum = { git = "https://github.com/Syndelis/strum/", branch = "next", features = ["strum_macros", "derive"] }
 glium = "0.32.1"
-imnodes = { path = "./crates/imnodes" }
-odeir = { path = "./crates/odeir" }
 thiserror = "1.0.40"
 sorted-vec = "0.8.2"
 paste = "1.0.14"
 winit = { version = "0.27.5", features = ["wayland", "x11"] }
-imgui = { git = "https://github.com/syndelis/imgui-rs", branch = "fix/alpha-blending", features = ["docking"] }
-imgui-glium-renderer = { git = "https://github.com/syndelis/imgui-rs", branch = "fix/alpha-blending" }
-imgui-winit-support = { git = "https://github.com/syndelis/imgui-rs", branch = "fix/alpha-blending" }
-
-# For development of imgui-rs features
-# imgui = { path = "./crates/imgui-rs/imgui", features = ["docking"] }
-# imgui-glium-renderer = { path = "./crates/imgui-rs/imgui-glium-renderer" }
-# imgui-winit-support = { path = "./crates/imgui-rs/imgui-winit-support" }
 
 serde_json = "1.0.108"
 rfd = "0.12.1"

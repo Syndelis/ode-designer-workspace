@@ -1,0 +1,16 @@
+[submodule "imnodes"]
+	path = imnodes
+	url = https://github.com/diegovsky/imnodes-rs
+	branch = ode-designer-workspace
+[submodule "odeir"]
+	path = odeir
+	url = https://github.com/syndelis/odeir
+	branch = ode-designer-workspace
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/syndelis/imgui-rs
+	branch = ode-designer-workspace
+[submodule "implot"]
+	path = implot
+	url = https://github.com/syndelis/implot-rs
+	branch = ode-designer-workspace

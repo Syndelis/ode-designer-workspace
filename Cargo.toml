@@ -1,8 +1,40 @@
 [workspace]
+resolver = "2"
+default-members = ["ode-designer"]
 members = [
     "ode-designer",
+
+    "odeir",
+    "odeir/simulator",
+
+    "imgui/imgui",
+    "imgui/imgui-sys",
+    "imgui/imgui-winit-support",
+    "imgui/imgui-glium-renderer",
+
+    "implot",
+
+    "imnodes",
+    "imnodes/imnodes-sys",
+    "imnodes/imnodes-sys-bindgen",
+]
+
+# See rust-lang/cargo#5042
+# Basically, we need to explicitly ignore the inner Cargo Workspaces and
+# redefine their members here
+exclude = [
     "odeir",
     "imgui",
-    "implot",
     "imnodes"
 ]
+
+[workspace.dependencies]
+odeir.path = "./odeir"
+imgui.path = "./imgui/imgui"
+implot.path = "./implot"
+imnodes.path = "./imnodes"
+
+# Subcrates
+imgui-sys.path = "./imgui/imgui-sys"
+imgui-glium-renderer.path = "./imgui/imgui-glium-renderer"
+imgui-winit-support.path = "./imgui/imgui-winit-support"
